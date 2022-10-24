@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+// Inheritance
 public class GameManagerX : StartMenu
 {
     public TextMeshProUGUI scoreText;
@@ -80,6 +81,7 @@ public class GameManagerX : StartMenu
     }
 
     // Stop game, bring up game over text and restart button
+    // Abstraction
     public void GameOver()
     {
         gameOverText.gameObject.SetActive(true);
@@ -88,6 +90,7 @@ public class GameManagerX : StartMenu
     }
 
     // Restart game by reloading the scene
+    // Abstraction
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerData : MonoBehaviour
 {
+    // Encapsulation
     public static PlayerData Instance { get; private set; }
 
     public string PlayerName;

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Inheritance
 public class Pizza : TargetX
 {
     private int m_pointValue = 15;

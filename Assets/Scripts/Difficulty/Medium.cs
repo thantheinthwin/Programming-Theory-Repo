@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Inheritance
 public class Medium : DifficultyButtonX
 {
     private int m_diffIndex = 2;
