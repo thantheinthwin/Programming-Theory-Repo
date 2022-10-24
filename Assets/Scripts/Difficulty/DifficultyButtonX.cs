@@ -7,7 +7,8 @@ public class DifficultyButtonX : MonoBehaviour
 {
     private Button button;
     private GameManagerX gameManagerX;
-    public int difficulty;
+    // Encapsulation
+    public static int difficulty { get; protected set; }
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +24,13 @@ public class DifficultyButtonX : MonoBehaviour
     void SetDifficulty()
     {
         Debug.Log(button.gameObject.name + " was clicked");
+        diffLevel();
         gameManagerX.StartGame(difficulty);
+    }
+
+    public virtual int diffLevel()
+    {
+        return difficulty;
     }
 
 }
